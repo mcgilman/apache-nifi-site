@@ -1,3 +1,8 @@
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
 #footer {
     text-align: center;
     font-size: 75%;
@@ -10,27 +15,31 @@
 }
 
 .navbar {
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(left, #ffffff 10%, #7299ac 25%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(10%, #ffffff), color-stop(25%, #7299ac)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, #ffffff 10%, #7299ac 25%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, #ffffff 10%, #7299ac 25%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, #ffffff 10%, #7299ac 25%); /* IE10+ */
-    background: linear-gradient(to right, #ffffff 10%, #7299ac 25%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#7299ac', GradientType=1); /* IE6-9 */
+    background: #7299ac;
+/*    background: #ffffff;  Old browsers 
+    background: -moz-linear-gradient(left, #ffffff 10%, #7299ac 25%);  FF3.6+ 
+    background: -webkit-gradient(linear, left top, right top, color-stop(10%, #ffffff), color-stop(25%, #7299ac));  Chrome,Safari4+ 
+    background: -webkit-linear-gradient(left, #ffffff 10%, #7299ac 25%);  Chrome10+,Safari5.1+ 
+    background: -o-linear-gradient(left, #ffffff 10%, #7299ac 25%);  Opera 11.10+ 
+    background: -ms-linear-gradient(left, #ffffff 10%, #7299ac 25%);  IE10+ 
+    background: linear-gradient(to right, #ffffff 10%, #7299ac 25%);  W3C 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#7299ac', GradientType=1);  IE6-9 */
 
 }
 
 .navbar-main {
-    color: #0F3541;
+    /*color: #0F3541;*/
+    color: #fff;
 }
 
 a, a:link, a:hover, a:active {
     font-family: 'Oswald', sans-serif;
 
-    color: #0F3541;
-    font-weight: 400;
+    /*color: #0F3541;*/
+    color: #fff;
+    font-weight: 100;
     font-size: larger;
+    letter-spacing: 2px;
 }
 
 .navbar-brand {
@@ -45,12 +54,13 @@ a, a:link, a:hover, a:active {
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
+    width: 600px;
 }
 
 .flow-img {
     display: block;
     margin: auto;
-    width: 60%;
+    width: 90%;
 }
 
 .jumbotron {

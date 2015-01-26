@@ -38,3 +38,79 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+#logo-top-bar {
+    max-width: 27px;
+    max-height: 40px;
+    margin-top: -2px;
+}
+
+#main-title {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+h1.nifi-txt {
+    font-size: 4.5em;
+    text-align: right;
+}
+
+.nifi-txt {
+    font-size: larger;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+
+.ni {
+    color: #7A96A4;
+}
+
+.fi {
+    color: #0F3541;
+}
+
+p.nifi {
+    text-align: right;
+}
+
+p.description {
+    font-size: 1.25em;
+    font-weight: 200;
+    color: #333;
+}
+
+#flow {
+    -moz-box-shadow: 0 0 25px #0F3541;
+    -webkit-box-shadow: 0 0 25px #0F3541;
+    box-shadow: 0px 0px 25px #0F3541;
+}
+
+div.features {
+    background-color: #D9E4E8;
+}
+
+#features-content {
+    margin-top: 2em;
+}
+
+#features-content ul {
+    padding-left: 10px;
+}
+
+div.footer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+div.footer p {
+    font-size: .7em;
+}
+
+div.clear {
+    clear: both;
+}

@@ -7,8 +7,8 @@ module.exports = function (grunt) {
             options: {
                 force: true
             },
-            js: ['dist/assets/js/'],
-            css: ['dist/assets/css/'],
+            js: ['dist/js/'],
+            css: ['dist/css/'],
             assets: ['dist/assets/*']
         },
         
@@ -39,8 +39,8 @@ module.exports = function (grunt) {
             },
             foundation: {
                 src: [
-                    'bower_components/foundation/js/foundation/foundation.js'
-                    // 'bower_components/foundation/js/foundation/foundation.alert.js',
+                    'bower_components/foundation/js/foundation/foundation.js',
+                    'bower_components/foundation/js/foundation/foundation.topbar.js'
                     // 'bower_components/foundation/js/foundation/foundation.abide.js',
                     // 'bower_components/foundation/js/foundation/foundation.joyride.js',
                     // ...more foundation JS you might want to add
@@ -74,6 +74,11 @@ module.exports = function (grunt) {
                     cwd:  'bower_components/jquery/dist',
                     src:  ['jquery.min.js'],
                     dest: 'dist/assets/js/'
+                }, {
+                    expand: true,
+                    cwd:  'bower_components/webfontloader',
+                    src:  ['webfontloader.js'],
+                    dest: 'dist/assets/js/'
                 }]
             }
         },
@@ -81,22 +86,22 @@ module.exports = function (grunt) {
         watch: {
             grunt: { 
                 files: ['Gruntfile.js'], 
-                tasks: ['default'] 
+                tasks: ['dev'] 
             },
             css: {
-                files: 'src/scss/**/*.scss',
+                files: 'src/scss/*.scss',
                 tasks: ['css']
             },
             script: {
-                files: 'src/js/**/*.js',
+                files: 'src/js/*.js',
                 tasks: ['js']
             },
             images: {
-                files: 'src/images/**/*.{png,jpg,gif,svg}',
+                files: 'src/images/*.{png,jpg,gif,svg}',
                 tasks: ['img']
             },
             assemble: {
-                files: 'src/includes/**/*.hbs',
+                files: 'src/{includes,layouts,pages}/*.hbs',
                 tasks: ['assemble']
             }
         }
@@ -113,6 +118,6 @@ module.exports = function (grunt) {
     grunt.registerTask('img', ['newer:copy']);
     grunt.registerTask('css', ['clean:css', 'compass']);
     grunt.registerTask('js',  ['clean:js', 'concat']);
-    grunt.registerTask('dev',  ['clean', 'assemble', 'css', 'js', 'img', 'watch']);
-    grunt.registerTask('default', ['clean', 'assemble', 'css', 'js', 'img']);
+    grunt.registerTask('dev',  ['clean', 'assemble', 'css', 'js', 'img', 'copy', 'watch']);
+    grunt.registerTask('default', ['clean', 'assemble', 'css', 'js', 'img', 'copy']);
 };

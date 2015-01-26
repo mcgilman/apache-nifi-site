@@ -1,6 +1,6 @@
 {
-  "name": "foundation-compass-app",
-  "version": "0.0.1",
+  "name": "apache-nifi-site",
+  "version": "0.0.1-incubating",
   "private": "true",
   "dependencies": {
     "foundation": "zurb/bower-foundation"

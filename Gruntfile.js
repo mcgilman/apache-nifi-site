@@ -67,7 +67,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd:  'src/images/',
-                    src:  ['**/*.{png,jpg,gif,svg}'],
+                    src:  ['**/*.{png,jpg,gif,svg,ico}'],
                     dest: 'dist/images/'
                 }, {
                     expand: true,
@@ -97,7 +97,7 @@ module.exports = function (grunt) {
                 tasks: ['js']
             },
             images: {
-                files: 'src/images/*.{png,jpg,gif,svg}',
+                files: 'src/images/*.{png,jpg,gif,svg,ico}',
                 tasks: ['img']
             },
             assemble: {

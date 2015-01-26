@@ -1,29 +1,42 @@
-# Foundation Compass Template
+# About
+[Apache NiFi project] (http://nifi.incubator.apache.org).
 
-The easiest way to get started with Foundation + Compass.
+## Application Style Properties
 
-## Requirements
+### Font
+- Oswald: http://www.google.com/fonts/specimen/Oswald
 
-  * Ruby 1.9+
-  * [Node.js](http://nodejs.org)
-  * [compass](http://compass-style.org/): `gem install compass`
-  * [bower](http://bower.io): `npm install bower -g`
+### Colors
+- 'ni':  #7A96A4
+- 'fi':  #0F3541
+- Toolbox:  #7299AC
+- Toolbar:  #A0BAC7
+- Flow Status: #D9E4E8
+- Utilities: #81A0B4
 
-## Quickstart
+## Technologies & Resources
+- HTML5
+- CSS3
+- jQuery
+- Modernizr
+- Google Fonts API
+- FontAwesome
 
-  * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
-  * Run `bower install` to install the latest version of Foundation
-  
-Then when you're working on your project, just run the following command:
+## License
 
-```bash
-bundle exec compass watch
-```
+Except as otherwise noted this software is licensed under the
+[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-## Upgrading
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-If you'd like to upgrade to a newer version of Foundation down the road just run:
+  http://www.apache.org/licenses/LICENSE-2.0
 
-```bash
-bower update
-```
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+

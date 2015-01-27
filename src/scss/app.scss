@@ -44,10 +44,19 @@ html, html a {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
+.wf-loading h1, .wf-loading p {
+    visibility:hidden;
+}
+
 #logo-top-bar {
     max-width: 27px;
     max-height: 40px;
     margin-top: -2px;
+}
+
+#logo-top-bar:hover {
+    -webkit-filter: brightness(1.03);
+    filter: brightness(1.03);
 }
 
 #main-title {

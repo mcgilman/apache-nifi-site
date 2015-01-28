@@ -41,16 +41,12 @@ module.exports = function (grunt) {
                 src: [
                     'bower_components/foundation/js/foundation/foundation.js',
                     'bower_components/foundation/js/foundation/foundation.topbar.js'
-                    // 'bower_components/foundation/js/foundation/foundation.abide.js',
-                    // 'bower_components/foundation/js/foundation/foundation.joyride.js',
-                    // ...more foundation JS you might want to add
                 ],
                 dest: 'dist/assets/js/foundation.js'
             },
             modernizr: {
                 src: [
                     'bower_components/modernizr/modernizr.js'
-                    // 'develop/js/custom.modernizr.js'
                 ],
                 dest: 'dist/assets/js/modernizr.js'
             },

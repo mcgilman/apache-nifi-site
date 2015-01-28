@@ -1,7 +1,8 @@
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation('topbar', {
-    mobile_show_parent_link: false
+    mobile_show_parent_link: false,
+    is_hover: false
 });
 
 // load fonts

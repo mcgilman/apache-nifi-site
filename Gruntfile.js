@@ -22,15 +22,15 @@ module.exports = function (grunt) {
                 files: {
                     'dist/': ['src/pages/html/*.hbs']
                 }
-            },
-            markdown: {
-                options: {
-                    layout: 'src/layouts/markdown.hbs'
-                },
-                files: {
-                    'dist/': ['src/pages/markdown/*.hbs']
-                }
             }
+//            markdown: {
+//                options: {
+//                    layout: 'src/layouts/markdown.hbs'
+//                },
+//                files: {
+//                    'dist/': ['src/pages/markdown/*.hbs']
+//                }
+//            }
         },
         
         compass: {

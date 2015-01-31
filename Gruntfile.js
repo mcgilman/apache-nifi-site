@@ -15,12 +15,20 @@ module.exports = function (grunt) {
         assemble: {
             options: {
                 partials: 'src/includes/*.hbs',
-                layout: 'src/layouts/default.hbs',
+                layout: 'src/layouts/html.hbs',
                 flatten: true
             },
-            pages: {
+            html: {
                 files: {
-                    'dist/': ['src/pages/*.hbs']
+                    'dist/': ['src/pages/html/*.hbs']
+                }
+            },
+            markdown: {
+                options: {
+                    layout: 'src/layouts/markdown.hbs'
+                },
+                files: {
+                    'dist/': ['src/pages/markdown/*.hbs']
                 }
             }
         },
@@ -75,6 +83,16 @@ module.exports = function (grunt) {
                     cwd:  'bower_components/webfontloader',
                     src:  ['webfontloader.js'],
                     dest: 'dist/assets/js/'
+                }, {
+                    expand: true,
+                    cwd:  'bower_components/font-awesome/css',
+                    src:  ['font-awesome.min.css'],
+                    dest: 'dist/assets/stylesheets/'
+                }, {
+                    expand: true,
+                    cwd:  'bower_components/font-awesome',
+                    src:  ['fonts/*'],
+                    dest: 'dist/assets/'
                 }]
             }
         },
@@ -88,7 +106,7 @@ module.exports = function (grunt) {
                 files: 'src/scss/*.scss',
                 tasks: ['css']
             },
-            script: {
+            script: { 
                 files: 'src/js/*.js',
                 tasks: ['js']
             },
@@ -97,7 +115,7 @@ module.exports = function (grunt) {
                 tasks: ['img']
             },
             assemble: {
-                files: 'src/{includes,layouts,pages}/*.hbs',
+                files: ['src/{includes,layouts}/*.hbs', 'src/pages/{html,markdown}/*.hbs'],
                 tasks: ['assemble']
             }
         }

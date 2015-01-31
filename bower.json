@@ -4,5 +4,8 @@
   "private": "true",
   "dependencies": {
     "foundation": "zurb/bower-foundation"
+  },
+  "devDependencies": {
+    "font-awesome": "~4.3.0"
   }
 }
